@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="console_root" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %5p %m%n" />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.kys.example.model.mapper" level="DEBUG"
+                additivity="false">
+            <Appender-ref ref="console_root"/>
+        </Logger>
+        <Root level="INFO">
+            <AppenderRef ref="console_root" />
+        </Root>
+    </Loggers>
+</Configuration>
